@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>St. Francis Catholic Secondary School</title>
+	<style type="text/css">
+		header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100px;
+			width: 100%;
+			background-color: rgb(135,206,250);
+			z-index: 1;
+		}
+
+		#schoollogo{
+			position: fixed;
+			top: 40px;
+			left: 50px;
+			z-index: 2;
+			border-radius: 50%;
+		}
+		#menu{
+			margin-top: 40px;
+			margin-left: 30%;
+		}
+		#menu a{
+			margin-left: 30px;
+			color: red;
+			font-weight: bold;
+			font-size: 16px;
+			font-family: tahoma;
+			text-decoration: none;
+		}
+		#menu a:hover{
+			color: white;
+		}
+		#section1{
+			height: 600px;
+			width: 100%;
+			top: 100px;
+			left: 0;
+			position: absolute;
+			background-image: url("graduating.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		#flag{
+			margin-top: 200px;
+			margin-left: 30%;
+			width: 20%;
+			padding: 20px 120px;
+			background-color: rgba(255,255,0,0.8);
+			text-align: center;
+			font-family: tahoma;
+		}
+		#section2{
+			position: absolute;
+			top: 700px;
+			left: 0;
+			height: 300px;
+			width: 100%;
+		}
+		.schoolinfo{
+			width: 33.33%;
+			float: left;
+		}
+		.info{
+			height: 100px;
+			padding: 20px 50px;
+			color: white;
+			font-weight: bold;
+		}
+		.imageinfo{
+			height: 200px;
+			width: 100%;
+		}
+		#section3{
+			position: absolute;
+			top: 1050px;
+			left: 0;
+			height: 150px;
+			width: 100%;
+		}
+		.textinfo{
+			width: 30%;
+			float: left;
+			padding: 10px;
+		}
+		#section4{
+			position: absolute;
+			top: 1200px;
+			left: 5%;
+			width: 90%;
+			height: 500px;
+		}
+		h2{
+			margin-left: 30px;
+			font-family: tahoma;
+			font-weight: bold;
+		}
+		h3{
+			margin-left: 30px;
+			font-family: tahoma;
+			font-weight: bold;
+		}
+		.school_logo{
+			border-radius: 50%;
+		}
+		.text{
+			margin-left: 85px;
+			margin-top: -15px;
+			font-weight: bold;
+			font-family: tahoma;
+			font-size: 25px;
+		}
+		#section5{
+			position: absolute;
+			top: 1700px;
+			height: 100px;
+			background-color:green;
+			left: 5%;
+			width: 90%;
+			color: white;
+			text-align: center;
+
+		}
+		#section6{
+			position: absolute;
+			top: 1900px;
+			height: 200px;
+			left: 5%;
+			width: 90%;
+			font-family: tahoma;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		#section7{
+			position: absolute;
+			top: 2100px;
+			height: 1500px;
+			left: 5%;
+			width: 90%;
+			text-align: center;
+		}
+		#section7 table{
+			width: 90%;
+			margin-left: 5%;
+		}
+		.score{
+			position: relative;
+			bottom: 100px;
+			right: 0;
+			background-color: lightblue;
+            padding: 20px;
+			border-radius: 50%;
+			font-size: 24px;
+			color: red;
+		}
+		#table1 tr td p{
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 0;
+		}
+		.picturerow div{
+			display: inline;
+		}
+		.picturerow img{
+			height: 200px;
+            width: 200px;
+            margin: 10px;
+            box-shadow: 5px 5px darkred;
+		}
+		.picturerow img:nth-child(odd){
+            border-top-right-radius:30%;
+            border-bottom-left-radius: 30%;
+		}
+		.picturerow img:nth-child(even){
+            border-top-left-radius:30%;
+            border-bottom-right-radius: 30%;
+		}
+		#section8{
+			position: absolute;
+			top: 3600px;
+			height: 200px;
+			left: 5%;
+			width: 90%;
+			text-align: center;
+		}
+		#section9{
+			background-color: green;
+			color: white;
+			text-align: center;
+		}
+		#footer{
+			position: absolute;
+			top: 3800px;
+			left: 0;
+			width: 100%;
+			height: 400px;
+			background-color: black;
+			color: white;
+		}
+		#table2{
+			padding: 0 20px;
+			line-height: 2;
+		}
+		#table2 img{
+			border-radius: 50%;
+			width: 20%;
+		}
+		#table2 td{
+			width: 20%;
+			padding: 0 10px;
+		}
+		#table2 a{
+			display: block;
+			text-decoration: none;
+			color: darkgray;
+		}
+		#table2 a:hover{
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="menu">
+			<a href="index.html">Home</a>
+			<a href="http://stfrancismagis.org/about-us-2/">About Us</a>
+			<a href="http://stfrancismagis.org/academics/">Academics</a>
+			<a href="http://stfrancismagis.org/admissions/">Admissions</a>
+			<a href="http://stfrancismagis.org/news/">News</a>
+			<a href="http://stfrancismagis.org/athletics/">J.S.E. Funds</a>
+		</div>
+	</header>
+	<img id="schoollogo" src="logo.jpeg">
+	<div id="section1">
+		<div id="flag">
+			<h1>Explore</h1>
+			<p>Facilities for the 21st Century Child</p>
+		</div>
+	</div>
+	<div id="section2">
+		<div class="schoolinfo">
+			<div class="info" style="background-color: rgb(135,206,250);">
+				<h3>About Us</h3>
+				<p>Learn More</p>
+			</div>
+			<img class="imageinfo" src="school1.jpeg">
+		</div>
+		<div class="schoolinfo">
+			<div class="info" style="background-color: rgb(30,144,255);">
+				<h3>Academics</h3>
+				<p>Learn More</p>
+			</div>
+			<img class="imageinfo" src="school2.jpeg">
+		</div>
+		<div class="schoolinfo">
+			<div class="info" style="background-color: rgb(135,206,250);">
+				<h3>School Life</h3>
+				<p>Learn More</p>
+			</div>
+			<img class="imageinfo" src="school3.jpeg">
+		</div>
+	</div>
+	<div id="section3">
+		<div class="textinfo">
+			<p>
+				You are welcome to St Francis Catholic Secondary School, a Jesuit college in the Archdiocese of Lagos founded by a Jesuit priest Fr. Francis Cusimano, S.J. St. Francis is run by Jesuits in the tradition of…
+			</p>
+			<a href="">Learn More</a>
+		</div>
+		<div class="textinfo">
+			<p>
+				St. Francis Catholic Secondary School runs the Junior Secondary School and Senior Secondary School Programmes as specified in the Nigerian National Policy on Education.
+			</p>
+			<a href="">Learn More</a>
+		</div>
+		<div class="textinfo">
+			<p>
+				A Jesuit student encounters many opportunities for growth and formation through his involvement in class and community events, his participation in all activities, and his commitment to the education of the whole person…
+			</p>
+			<a href="">Learn More</a>
+		</div>
+		
+	</div>
+	<div id="section4">
+		<h2>FEATURE STORY</h2>
+		<h3>TOP 19 STUDENTS WITH 300 & ABOVE IN THE 2023 UTME</h3>
+		<hr>
+		<div>
+		    <img class="school_logo" src="logo.jpeg">
+		</div>
+		<div class="text">
+		    <p>ST FRANCIS CATHOLIC SECONDARY SCHOOL,IDIMU,LAGOS</p>
+
+		</div>
+	</div>
+	<div id="section5">
+		<h3>
+			We  are  glad  to  inform  of  the  stellar  performance  of  the  magis.  Each  of  them  lived  up  to  the  spirit <br> of  ecxellence.  As  a  set,  they  have  made  themselves,  their  teachers,  parents,  relatives, <br> and  the  school  proud.  Heartly  congratulation  to  the  class  of  2023. 
+		</h3>
+	</div>
+	<div id="section6">
+		<h1>TOP 19 BEST STUDENTS WITH 300 & ABOVE IN THE 2023 USCE</h1>
+	</div>
+	<div id="section7">
+		<table id="table1">
+			<tr class="picturerow">
+				<td colspan="10" style="text-align:right">
+					<img src="student12.jpeg">
+					<p style="margin-right: 20px;">AJAYI EBERECHUKWU</p>
+					<div class="score">360</div>
+
+				</td>
+				<td colspan="10" style="text-align:left;">
+					<img src="student15.jpeg">
+					<p style="margin-left: 20px;">MUONEME CHIBUZOR</p>
+					<div class="score">355</div>
+				</td>
+			</tr>
+			<tr class="picturerow">
+				<td colspan="5">
+					<img src="student3.jpeg">
+					<p>ONOJA CHIDOZIE</p>
+					<div class="score">349</div>
+					
+				</td>
+				<td colspan="5">
+					<img src="student4.jpeg">
+					<p>ONORO DAVID</p>
+					<div class="score">345</div>
+				</td>
+				<td colspan="5">
+					<img src="student5.jpeg">
+					<p>ADUMATI EMMANUEL</p>
+					<div class="score">340</div>
+				</td>
+				<td colspan="5">
+					<img src="student6.jpeg">
+					<p>EZUGWU NNOEMA</p>
+					<div class="score">335</div>
+				</td>
+			</tr>
+			<tr class="picturerow">
+				<td colspan="5">
+					<img src="student7.jpeg">
+					<p>MFON-UKO LYSA</p>
+					<div class="score">330</div>
+				</td>
+				<td colspan="5">
+					<img src="student8.jpeg">
+					<p>IDONGESIT BEST</p>
+					<div class="score">325</div>
+				</td>
+				<td colspan="5">
+					<img src="student9.jpeg">
+					<p>OKPALEKE EZINWA</p>
+					<div class="score">325</div>
+				</td>
+				<td colspan="5">
+					<img src="student10.jpeg">
+					<p>OPORUZOR KAYLA</p>
+					<div class="score">321</div>
+				</td>
+			</tr>
+			<tr class="picturerow">
+				<td colspan="5">
+					<img src="student11.jpeg">
+					<p>OKORO CHIAMAKA</p>
+					<div class="score">320</div>
+				</td>
+				<td colspan="5">
+					<img src="student1.jpeg">
+					<p>OJIDEH GERALD</p>
+					<div class="score">317</div>
+				</td>
+				<td colspan="5">
+					<img src="student2.jpeg">
+					<p>ADEYERI FISAYO</p>
+					<div class="score">315</div>
+				</td>
+				<td colspan="5">
+					<img src="student16.jpeg">
+					<p>EZEOFOR JULIET</p>
+					<div class="score">310</div>
+				</td>
+			</tr>
+			<tr class="picturerow">
+				<td colspan="4">
+					<img src="student17.jpeg">
+					<p>EWELUZOR KAMSI</p>
+					<div class="score">310</div>
+				</td>
+				<td colspan="4">
+					<img src="student19.jpeg">
+					<p>EKPO FAVOUR</p>
+					<div class="score">308</div>
+				</td>
+				<td colspan="4">
+					<img src="student20.jpeg">
+					<p>ODU MICHELL</p>
+					<div class="score">306</div>
+				</td>
+				<td colspan="4">
+					<img src="student13.jpeg">
+					<p>GEORGE-UMOH ANGEL</p>
+					<div class="score">305</div>
+				</td>
+				<td colspan="4">
+					<img src="student14.jpeg">
+					<p>UKATU AMARCHI</p>
+					<div class="score">300</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="section8">
+		<div class="text">
+		    <p>Signed:<br>REV. FR. FRANCIS KOSHOFFA S.J<br>Administrator, St. Francis Catholic Secondary School, Idimu.</p>
+		</div>
+		<div id="section9">
+			<h1>www.stfrancismagis.org  st francis catholic secondary school   SFCSSIDIMU</h1>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<table id="table2">
+			<tr>
+				<td>
+					<img src="logo.jpeg">
+					<p>The Jesuit Catholic College of Lagos</p>
+					<p>107 Liasu-Road,Council Bus-Stop, Idimu, Lagos, Nigeria.</p>
+					<a href="mailto:info@stfrancismagis.org" style="color:white;">info@stfrancismagis.org</a>
+					<hr style="border-style: solid;border-color: red;">
+				</td>
+				<td>
+					<h4 style="background-color:red;">Office Hours</h4>
+					<hr style="border-style: solid;border-color: cyan;">
+					<p>Working Days: 8AM-4PM</p>
+					<p>saturday and Sunday (CLOSED)</p>
+				</td>
+				<td>
+					<h4>ANW Jesuit Schools</h4>
+					<hr style="border-style: solid;border-color: cyan;">
+					<a href="https://www.jesuits-anw.org/">ANW Jesuits</a>
+					<a href="https://www.loyolajesuit.org/">Loyola Jesuit College, Abuja</a>
+					<a href="https://jesuitmemorial.org/">Jesuit Memorial College, Port Harcourt</a>
+					<a href="https://gonzagajesuit.org/">Gonzaga Jesuit College, Okija</a>
+					<a href="https://arrupejesuits.org/">Arrupe Jesiut College, Abbi</a>
+					<a href="https://xavierjesuit.org/">Xavier Jesuit College, Monrovia</a>
+				</td>
+				<td>
+					<h4>Portals</h4>
+					<hr style="border-style: solid;border-color: cyan;">
+					<a href="http://stfrancismagis.org/">Admin</a>
+					<a href="https://bolt.schoolcube.net/staff/sfcs300">Staff</a>
+					<a href="https://www.stfrancismagis.net/">Parent</a>
+					<a href="https://bolt.schoolcube.net/students/sfcs300">Students</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
